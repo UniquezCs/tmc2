@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\mpeg-pcc-tmc2\mpeg-pcc-tmc2-master\dependencies\PccLibHevcParser\source\Debug.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\mpeg-pcc-tmc2\mpeg-pcc-tmc2-master\dependencies\PccLibHevcParser\source\PCCHevcParser.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\mpeg-pcc-tmc2\mpeg-pcc-tmc2-master\dependencies\PccLibHevcParser\source\SEI.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\mpeg-pcc-tmc2\mpeg-pcc-tmc2-master\dependencies\PccLibHevcParser\source\TComBitStream.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\mpeg-pcc-tmc2\mpeg-pcc-tmc2-master\dependencies\PccLibHevcParser\source\TComRom.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\mpeg-pcc-tmc2\mpeg-pcc-tmc2-master\dependencies\PccLibHevcParser\source\TComSlice.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\mpeg-pcc-tmc2\mpeg-pcc-tmc2-master\dependencies\PccLibHevcParser\source\TDecCAVLC.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\mpeg-pcc-tmc2\mpeg-pcc-tmc2-master\dependencies\PccLibHevcParser\include\CommonDef.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\mpeg-pcc-tmc2\mpeg-pcc-tmc2-master\dependencies\PccLibHevcParser\include\ContextTables.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\mpeg-pcc-tmc2\mpeg-pcc-tmc2-master\dependencies\PccLibHevcParser\include\Debug.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\mpeg-pcc-tmc2\mpeg-pcc-tmc2-master\dependencies\PccLibHevcParser\include\PCCHevcParser.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\mpeg-pcc-tmc2\mpeg-pcc-tmc2-master\dependencies\PccLibHevcParser\include\SEI.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\mpeg-pcc-tmc2\mpeg-pcc-tmc2-master\dependencies\PccLibHevcParser\include\TComBitStream.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\mpeg-pcc-tmc2\mpeg-pcc-tmc2-master\dependencies\PccLibHevcParser\include\TComChromaFormat.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\mpeg-pcc-tmc2\mpeg-pcc-tmc2-master\dependencies\PccLibHevcParser\include\TComList.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\mpeg-pcc-tmc2\mpeg-pcc-tmc2-master\dependencies\PccLibHevcParser\include\TComRectangle.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\mpeg-pcc-tmc2\mpeg-pcc-tmc2-master\dependencies\PccLibHevcParser\include\TComRom.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\mpeg-pcc-tmc2\mpeg-pcc-tmc2-master\dependencies\PccLibHevcParser\include\TComSlice.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\mpeg-pcc-tmc2\mpeg-pcc-tmc2-master\dependencies\PccLibHevcParser\include\TDecCAVLC.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\mpeg-pcc-tmc2\mpeg-pcc-tmc2-master\dependencies\PccLibHevcParser\include\TypeDef.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\mpeg-pcc-tmc2\mpeg-pcc-tmc2-master\dependencies\PccLibHevcParser\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{8C436057-9D8F-3CDE-8A19-3EF95C9AC801}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{5C449FC0-047E-3179-A76C-4396476D50A3}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

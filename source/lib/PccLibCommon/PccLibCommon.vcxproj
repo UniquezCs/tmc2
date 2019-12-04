@@ -1,0 +1,339 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{3323BC58-6D65-3601-A373-7D4D80732B8D}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>PccLibCommon</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\mpeg-pcc-tmc2\mpeg-pcc-tmc2-master\lib\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">PccLibCommon.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">PccLibCommon</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\mpeg-pcc-tmc2\mpeg-pcc-tmc2-master\lib\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">PccLibCommon.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">PccLibCommon</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\mpeg-pcc-tmc2\mpeg-pcc-tmc2-master\lib\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">PccLibCommon.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">PccLibCommon</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\mpeg-pcc-tmc2\mpeg-pcc-tmc2-master\lib\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">PccLibCommon.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">PccLibCommon</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.lib</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\mpeg-pcc-tmc2\mpeg-pcc-tmc2-master\source\lib\PccLibCommon\include;D:\mpeg-pcc-tmc2\mpeg-pcc-tmc2-master\dependencies\nanoflann;D:\mpeg-pcc-tmc2\mpeg-pcc-tmc2-master\dependencies\tbb\include;D:\mpeg-pcc-tmc2\mpeg-pcc-tmc2-master\dependencies\libmd5;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <CppLanguageStandard>c++11</CppLanguageStandard>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\mpeg-pcc-tmc2\mpeg-pcc-tmc2-master\source\lib\PccLibCommon\include;D:\mpeg-pcc-tmc2\mpeg-pcc-tmc2-master\dependencies\nanoflann;D:\mpeg-pcc-tmc2\mpeg-pcc-tmc2-master\dependencies\tbb\include;D:\mpeg-pcc-tmc2\mpeg-pcc-tmc2-master\dependencies\libmd5;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <MASM>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <IncludePaths>D:\mpeg-pcc-tmc2\mpeg-pcc-tmc2-master\source\lib\PccLibCommon\include;D:\mpeg-pcc-tmc2\mpeg-pcc-tmc2-master\dependencies\nanoflann;D:\mpeg-pcc-tmc2\mpeg-pcc-tmc2-master\dependencies\tbb\include;D:\mpeg-pcc-tmc2\mpeg-pcc-tmc2-master\dependencies\libmd5;%(IncludePaths)</IncludePaths>
+    </MASM>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\mpeg-pcc-tmc2\mpeg-pcc-tmc2-master\source\lib\PccLibCommon\include;D:\mpeg-pcc-tmc2\mpeg-pcc-tmc2-master\dependencies\nanoflann;D:\mpeg-pcc-tmc2\mpeg-pcc-tmc2-master\dependencies\tbb\include;D:\mpeg-pcc-tmc2\mpeg-pcc-tmc2-master\dependencies\libmd5;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\mpeg-pcc-tmc2\mpeg-pcc-tmc2-master\source\lib\PccLibCommon\include;D:\mpeg-pcc-tmc2\mpeg-pcc-tmc2-master\dependencies\nanoflann;D:\mpeg-pcc-tmc2\mpeg-pcc-tmc2-master\dependencies\tbb\include;D:\mpeg-pcc-tmc2\mpeg-pcc-tmc2-master\dependencies\libmd5;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <CppLanguageStandard>c++11</CppLanguageStandard>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\mpeg-pcc-tmc2\mpeg-pcc-tmc2-master\source\lib\PccLibCommon\include;D:\mpeg-pcc-tmc2\mpeg-pcc-tmc2-master\dependencies\nanoflann;D:\mpeg-pcc-tmc2\mpeg-pcc-tmc2-master\dependencies\tbb\include;D:\mpeg-pcc-tmc2\mpeg-pcc-tmc2-master\dependencies\libmd5;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <MASM>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <IncludePaths>D:\mpeg-pcc-tmc2\mpeg-pcc-tmc2-master\source\lib\PccLibCommon\include;D:\mpeg-pcc-tmc2\mpeg-pcc-tmc2-master\dependencies\nanoflann;D:\mpeg-pcc-tmc2\mpeg-pcc-tmc2-master\dependencies\tbb\include;D:\mpeg-pcc-tmc2\mpeg-pcc-tmc2-master\dependencies\libmd5;%(IncludePaths)</IncludePaths>
+    </MASM>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\mpeg-pcc-tmc2\mpeg-pcc-tmc2-master\source\lib\PccLibCommon\include;D:\mpeg-pcc-tmc2\mpeg-pcc-tmc2-master\dependencies\nanoflann;D:\mpeg-pcc-tmc2\mpeg-pcc-tmc2-master\dependencies\tbb\include;D:\mpeg-pcc-tmc2\mpeg-pcc-tmc2-master\dependencies\libmd5;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\mpeg-pcc-tmc2\mpeg-pcc-tmc2-master\source\lib\PccLibCommon\include;D:\mpeg-pcc-tmc2\mpeg-pcc-tmc2-master\dependencies\nanoflann;D:\mpeg-pcc-tmc2\mpeg-pcc-tmc2-master\dependencies\tbb\include;D:\mpeg-pcc-tmc2\mpeg-pcc-tmc2-master\dependencies\libmd5;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>MinSizeRel/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <CppLanguageStandard>c++11</CppLanguageStandard>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\mpeg-pcc-tmc2\mpeg-pcc-tmc2-master\source\lib\PccLibCommon\include;D:\mpeg-pcc-tmc2\mpeg-pcc-tmc2-master\dependencies\nanoflann;D:\mpeg-pcc-tmc2\mpeg-pcc-tmc2-master\dependencies\tbb\include;D:\mpeg-pcc-tmc2\mpeg-pcc-tmc2-master\dependencies\libmd5;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <MASM>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <IncludePaths>D:\mpeg-pcc-tmc2\mpeg-pcc-tmc2-master\source\lib\PccLibCommon\include;D:\mpeg-pcc-tmc2\mpeg-pcc-tmc2-master\dependencies\nanoflann;D:\mpeg-pcc-tmc2\mpeg-pcc-tmc2-master\dependencies\tbb\include;D:\mpeg-pcc-tmc2\mpeg-pcc-tmc2-master\dependencies\libmd5;%(IncludePaths)</IncludePaths>
+    </MASM>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\mpeg-pcc-tmc2\mpeg-pcc-tmc2-master\source\lib\PccLibCommon\include;D:\mpeg-pcc-tmc2\mpeg-pcc-tmc2-master\dependencies\nanoflann;D:\mpeg-pcc-tmc2\mpeg-pcc-tmc2-master\dependencies\tbb\include;D:\mpeg-pcc-tmc2\mpeg-pcc-tmc2-master\dependencies\libmd5;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\mpeg-pcc-tmc2\mpeg-pcc-tmc2-master\source\lib\PccLibCommon\include;D:\mpeg-pcc-tmc2\mpeg-pcc-tmc2-master\dependencies\nanoflann;D:\mpeg-pcc-tmc2\mpeg-pcc-tmc2-master\dependencies\tbb\include;D:\mpeg-pcc-tmc2\mpeg-pcc-tmc2-master\dependencies\libmd5;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <CppLanguageStandard>c++11</CppLanguageStandard>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\mpeg-pcc-tmc2\mpeg-pcc-tmc2-master\source\lib\PccLibCommon\include;D:\mpeg-pcc-tmc2\mpeg-pcc-tmc2-master\dependencies\nanoflann;D:\mpeg-pcc-tmc2\mpeg-pcc-tmc2-master\dependencies\tbb\include;D:\mpeg-pcc-tmc2\mpeg-pcc-tmc2-master\dependencies\libmd5;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <MASM>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <IncludePaths>D:\mpeg-pcc-tmc2\mpeg-pcc-tmc2-master\source\lib\PccLibCommon\include;D:\mpeg-pcc-tmc2\mpeg-pcc-tmc2-master\dependencies\nanoflann;D:\mpeg-pcc-tmc2\mpeg-pcc-tmc2-master\dependencies\tbb\include;D:\mpeg-pcc-tmc2\mpeg-pcc-tmc2-master\dependencies\libmd5;%(IncludePaths)</IncludePaths>
+    </MASM>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\mpeg-pcc-tmc2\mpeg-pcc-tmc2-master\source\lib\PccLibCommon\include;D:\mpeg-pcc-tmc2\mpeg-pcc-tmc2-master\dependencies\nanoflann;D:\mpeg-pcc-tmc2\mpeg-pcc-tmc2-master\dependencies\tbb\include;D:\mpeg-pcc-tmc2\mpeg-pcc-tmc2-master\dependencies\libmd5;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\mpeg-pcc-tmc2\mpeg-pcc-tmc2-master\source\lib\PccLibCommon\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/mpeg-pcc-tmc2/mpeg-pcc-tmc2-master/source/lib/PccLibCommon/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/mpeg-pcc-tmc2/mpeg-pcc-tmc2-master -BD:/mpeg-pcc-tmc2/mpeg-pcc-tmc2-master/build --check-stamp-file D:/mpeg-pcc-tmc2/mpeg-pcc-tmc2-master/build/source/lib/PccLibCommon/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\CMake\share\cmake-3.15\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CheckSymbolExists.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\Platform\Windows-MSVC.cmake;D:\mpeg-pcc-tmc2\mpeg-pcc-tmc2-master\build\CMakeFiles\3.15.0-rc3\CMakeCCompiler.cmake;D:\mpeg-pcc-tmc2\mpeg-pcc-tmc2-master\source\lib\PccLibCommon\include\PCCConfig.h.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\mpeg-pcc-tmc2\mpeg-pcc-tmc2-master\build\source\lib\PccLibCommon\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/mpeg-pcc-tmc2/mpeg-pcc-tmc2-master/source/lib/PccLibCommon/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/mpeg-pcc-tmc2/mpeg-pcc-tmc2-master -BD:/mpeg-pcc-tmc2/mpeg-pcc-tmc2-master/build --check-stamp-file D:/mpeg-pcc-tmc2/mpeg-pcc-tmc2-master/build/source/lib/PccLibCommon/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\CMake\share\cmake-3.15\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CheckSymbolExists.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\Platform\Windows-MSVC.cmake;D:\mpeg-pcc-tmc2\mpeg-pcc-tmc2-master\build\CMakeFiles\3.15.0-rc3\CMakeCCompiler.cmake;D:\mpeg-pcc-tmc2\mpeg-pcc-tmc2-master\source\lib\PccLibCommon\include\PCCConfig.h.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\mpeg-pcc-tmc2\mpeg-pcc-tmc2-master\build\source\lib\PccLibCommon\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/mpeg-pcc-tmc2/mpeg-pcc-tmc2-master/source/lib/PccLibCommon/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/mpeg-pcc-tmc2/mpeg-pcc-tmc2-master -BD:/mpeg-pcc-tmc2/mpeg-pcc-tmc2-master/build --check-stamp-file D:/mpeg-pcc-tmc2/mpeg-pcc-tmc2-master/build/source/lib/PccLibCommon/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files\CMake\share\cmake-3.15\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CheckSymbolExists.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\Platform\Windows-MSVC.cmake;D:\mpeg-pcc-tmc2\mpeg-pcc-tmc2-master\build\CMakeFiles\3.15.0-rc3\CMakeCCompiler.cmake;D:\mpeg-pcc-tmc2\mpeg-pcc-tmc2-master\source\lib\PccLibCommon\include\PCCConfig.h.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\mpeg-pcc-tmc2\mpeg-pcc-tmc2-master\build\source\lib\PccLibCommon\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/mpeg-pcc-tmc2/mpeg-pcc-tmc2-master/source/lib/PccLibCommon/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/mpeg-pcc-tmc2/mpeg-pcc-tmc2-master -BD:/mpeg-pcc-tmc2/mpeg-pcc-tmc2-master/build --check-stamp-file D:/mpeg-pcc-tmc2/mpeg-pcc-tmc2-master/build/source/lib/PccLibCommon/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files\CMake\share\cmake-3.15\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CheckSymbolExists.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\Platform\Windows-MSVC.cmake;D:\mpeg-pcc-tmc2\mpeg-pcc-tmc2-master\build\CMakeFiles\3.15.0-rc3\CMakeCCompiler.cmake;D:\mpeg-pcc-tmc2\mpeg-pcc-tmc2-master\source\lib\PccLibCommon\include\PCCConfig.h.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\mpeg-pcc-tmc2\mpeg-pcc-tmc2-master\build\source\lib\PccLibCommon\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\mpeg-pcc-tmc2\mpeg-pcc-tmc2-master\dependencies\libmd5\MD5.h" />
+    <ClInclude Include="D:\mpeg-pcc-tmc2\mpeg-pcc-tmc2-master\dependencies\libmd5\libmd5.h" />
+    <ClInclude Include="D:\mpeg-pcc-tmc2\mpeg-pcc-tmc2-master\dependencies\nanoflann\KDTreeVectorOfVectorsAdaptor.h" />
+    <ClInclude Include="D:\mpeg-pcc-tmc2\mpeg-pcc-tmc2-master\dependencies\nanoflann\nanoflann.hpp" />
+    <ClInclude Include="D:\mpeg-pcc-tmc2\mpeg-pcc-tmc2-master\source\lib\PccLibCommon\include\PCCBitstream.h" />
+    <ClInclude Include="D:\mpeg-pcc-tmc2\mpeg-pcc-tmc2-master\source\lib\PccLibCommon\include\PCCChrono.h" />
+    <ClInclude Include="D:\mpeg-pcc-tmc2\mpeg-pcc-tmc2-master\source\lib\PccLibCommon\include\PCCCodec.h" />
+    <ClInclude Include="D:\mpeg-pcc-tmc2\mpeg-pcc-tmc2-master\source\lib\PccLibCommon\include\PCCCommon.h" />
+    <ClInclude Include="D:\mpeg-pcc-tmc2\mpeg-pcc-tmc2-master\source\lib\PccLibCommon\include\PCCConfig.h" />
+    <ClInclude Include="D:\mpeg-pcc-tmc2\mpeg-pcc-tmc2-master\source\lib\PccLibCommon\include\PCCContext.h" />
+    <ClInclude Include="D:\mpeg-pcc-tmc2\mpeg-pcc-tmc2-master\source\lib\PccLibCommon\include\PCCFrameContext.h" />
+    <ClInclude Include="D:\mpeg-pcc-tmc2\mpeg-pcc-tmc2-master\source\lib\PccLibCommon\include\PCCGroupOfFrames.h" />
+    <ClInclude Include="D:\mpeg-pcc-tmc2\mpeg-pcc-tmc2-master\source\lib\PccLibCommon\include\PCCImage.h" />
+    <ClInclude Include="D:\mpeg-pcc-tmc2\mpeg-pcc-tmc2-master\source\lib\PccLibCommon\include\PCCKdTree.h" />
+    <ClInclude Include="D:\mpeg-pcc-tmc2\mpeg-pcc-tmc2-master\source\lib\PccLibCommon\include\PCCMath.h" />
+    <ClInclude Include="D:\mpeg-pcc-tmc2\mpeg-pcc-tmc2-master\source\lib\PccLibCommon\include\PCCMemory.h" />
+    <ClInclude Include="D:\mpeg-pcc-tmc2\mpeg-pcc-tmc2-master\source\lib\PccLibCommon\include\PCCMetadata.h" />
+    <ClInclude Include="D:\mpeg-pcc-tmc2\mpeg-pcc-tmc2-master\source\lib\PccLibCommon\include\PCCPatch.h" />
+    <ClInclude Include="D:\mpeg-pcc-tmc2\mpeg-pcc-tmc2-master\source\lib\PccLibCommon\include\PCCPointSet.h" />
+    <ClInclude Include="D:\mpeg-pcc-tmc2\mpeg-pcc-tmc2-master\source\lib\PccLibCommon\include\PCCSystem.h" />
+    <ClInclude Include="D:\mpeg-pcc-tmc2\mpeg-pcc-tmc2-master\source\lib\PccLibCommon\include\PCCVideo.h" />
+    <ClInclude Include="D:\mpeg-pcc-tmc2\mpeg-pcc-tmc2-master\source\lib\PccLibCommon\include\PCCVideoBitstream.h" />
+    <ClCompile Include="D:\mpeg-pcc-tmc2\mpeg-pcc-tmc2-master\dependencies\libmd5\libmd5.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="D:\mpeg-pcc-tmc2\mpeg-pcc-tmc2-master\source\lib\PccLibCommon\source\PCCBitstream.cpp" />
+    <ClCompile Include="D:\mpeg-pcc-tmc2\mpeg-pcc-tmc2-master\source\lib\PccLibCommon\source\PCCChrono.cpp" />
+    <ClCompile Include="D:\mpeg-pcc-tmc2\mpeg-pcc-tmc2-master\source\lib\PccLibCommon\source\PCCCodec.cpp" />
+    <ClCompile Include="D:\mpeg-pcc-tmc2\mpeg-pcc-tmc2-master\source\lib\PccLibCommon\source\PCCContext.cpp" />
+    <ClCompile Include="D:\mpeg-pcc-tmc2\mpeg-pcc-tmc2-master\source\lib\PccLibCommon\source\PCCFrameContext.cpp" />
+    <ClCompile Include="D:\mpeg-pcc-tmc2\mpeg-pcc-tmc2-master\source\lib\PccLibCommon\source\PCCGroupOfFrames.cpp" />
+    <ClCompile Include="D:\mpeg-pcc-tmc2\mpeg-pcc-tmc2-master\source\lib\PccLibCommon\source\PCCKdTree.cpp" />
+    <ClCompile Include="D:\mpeg-pcc-tmc2\mpeg-pcc-tmc2-master\source\lib\PccLibCommon\source\PCCPointSet.cpp" />
+    <ClCompile Include="D:\mpeg-pcc-tmc2\mpeg-pcc-tmc2-master\source\lib\PccLibCommon\source\PCCSystem.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:\mpeg-pcc-tmc2\mpeg-pcc-tmc2-master\build\ZERO_CHECK.vcxproj">
+      <Project>{DD6E42B0-2496-3373-A33C-F89159B59FA1}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.targets" />
+  </ImportGroup>
+</Project>

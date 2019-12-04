@@ -1,0 +1,372 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{7B74F9EF-6BAE-313F-95DC-C047ECFDF804}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>PccAppMetrics</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\mpeg-pcc-tmc2\mpeg-pcc-tmc2-master\bin\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">PccAppMetrics.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">PccAppMetrics</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\mpeg-pcc-tmc2\mpeg-pcc-tmc2-master\bin\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">PccAppMetrics.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">PccAppMetrics</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\mpeg-pcc-tmc2\mpeg-pcc-tmc2-master\bin\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">PccAppMetrics.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">PccAppMetrics</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\mpeg-pcc-tmc2\mpeg-pcc-tmc2-master\bin\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">PccAppMetrics.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">PccAppMetrics</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\mpeg-pcc-tmc2\mpeg-pcc-tmc2-master\source\lib\PccLibCommon\include;D:\mpeg-pcc-tmc2\mpeg-pcc-tmc2-master\source\lib\PccLibMetrics\include;D:\mpeg-pcc-tmc2\mpeg-pcc-tmc2-master\dependencies\program-options-lite;D:\mpeg-pcc-tmc2\mpeg-pcc-tmc2-master\dependencies\tbb\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <CppLanguageStandard>c++11</CppLanguageStandard>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;__TBB_NO_IMPLICIT_LINKAGE=1;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;__TBB_NO_IMPLICIT_LINKAGE=1;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\mpeg-pcc-tmc2\mpeg-pcc-tmc2-master\source\lib\PccLibCommon\include;D:\mpeg-pcc-tmc2\mpeg-pcc-tmc2-master\source\lib\PccLibMetrics\include;D:\mpeg-pcc-tmc2\mpeg-pcc-tmc2-master\dependencies\program-options-lite;D:\mpeg-pcc-tmc2\mpeg-pcc-tmc2-master\dependencies\tbb\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <MASM>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;__TBB_NO_IMPLICIT_LINKAGE=1;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <IncludePaths>D:\mpeg-pcc-tmc2\mpeg-pcc-tmc2-master\source\lib\PccLibCommon\include;D:\mpeg-pcc-tmc2\mpeg-pcc-tmc2-master\source\lib\PccLibMetrics\include;D:\mpeg-pcc-tmc2\mpeg-pcc-tmc2-master\dependencies\program-options-lite;D:\mpeg-pcc-tmc2\mpeg-pcc-tmc2-master\dependencies\tbb\include;%(IncludePaths)</IncludePaths>
+    </MASM>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\mpeg-pcc-tmc2\mpeg-pcc-tmc2-master\source\lib\PccLibCommon\include;D:\mpeg-pcc-tmc2\mpeg-pcc-tmc2-master\source\lib\PccLibMetrics\include;D:\mpeg-pcc-tmc2\mpeg-pcc-tmc2-master\dependencies\program-options-lite;D:\mpeg-pcc-tmc2\mpeg-pcc-tmc2-master\dependencies\tbb\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\..\..\..\lib\Debug\PccLibCommon.lib;..\..\..\..\lib\Debug\PccLibMetrics.lib;..\..\..\..\lib\Debug\tbb_static.lib;..\..\..\..\lib\Debug\PccLibCommon.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>tbb_debug.lib;tbb.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/mpeg-pcc-tmc2/mpeg-pcc-tmc2-master/lib/Debug/PccAppMetrics.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/mpeg-pcc-tmc2/mpeg-pcc-tmc2-master/bin/Debug/PccAppMetrics.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\mpeg-pcc-tmc2\mpeg-pcc-tmc2-master\source\lib\PccLibCommon\include;D:\mpeg-pcc-tmc2\mpeg-pcc-tmc2-master\source\lib\PccLibMetrics\include;D:\mpeg-pcc-tmc2\mpeg-pcc-tmc2-master\dependencies\program-options-lite;D:\mpeg-pcc-tmc2\mpeg-pcc-tmc2-master\dependencies\tbb\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <CppLanguageStandard>c++11</CppLanguageStandard>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;__TBB_NO_IMPLICIT_LINKAGE=1;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;__TBB_NO_IMPLICIT_LINKAGE=1;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\mpeg-pcc-tmc2\mpeg-pcc-tmc2-master\source\lib\PccLibCommon\include;D:\mpeg-pcc-tmc2\mpeg-pcc-tmc2-master\source\lib\PccLibMetrics\include;D:\mpeg-pcc-tmc2\mpeg-pcc-tmc2-master\dependencies\program-options-lite;D:\mpeg-pcc-tmc2\mpeg-pcc-tmc2-master\dependencies\tbb\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <MASM>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;__TBB_NO_IMPLICIT_LINKAGE=1;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <IncludePaths>D:\mpeg-pcc-tmc2\mpeg-pcc-tmc2-master\source\lib\PccLibCommon\include;D:\mpeg-pcc-tmc2\mpeg-pcc-tmc2-master\source\lib\PccLibMetrics\include;D:\mpeg-pcc-tmc2\mpeg-pcc-tmc2-master\dependencies\program-options-lite;D:\mpeg-pcc-tmc2\mpeg-pcc-tmc2-master\dependencies\tbb\include;%(IncludePaths)</IncludePaths>
+    </MASM>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\mpeg-pcc-tmc2\mpeg-pcc-tmc2-master\source\lib\PccLibCommon\include;D:\mpeg-pcc-tmc2\mpeg-pcc-tmc2-master\source\lib\PccLibMetrics\include;D:\mpeg-pcc-tmc2\mpeg-pcc-tmc2-master\dependencies\program-options-lite;D:\mpeg-pcc-tmc2\mpeg-pcc-tmc2-master\dependencies\tbb\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\..\..\..\lib\Release\PccLibCommon.lib;..\..\..\..\lib\Release\PccLibMetrics.lib;..\..\..\..\lib\Release\tbb_static.lib;..\..\..\..\lib\Release\PccLibCommon.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>tbb_debug.lib;tbb.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/mpeg-pcc-tmc2/mpeg-pcc-tmc2-master/lib/Release/PccAppMetrics.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/mpeg-pcc-tmc2/mpeg-pcc-tmc2-master/bin/Release/PccAppMetrics.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\mpeg-pcc-tmc2\mpeg-pcc-tmc2-master\source\lib\PccLibCommon\include;D:\mpeg-pcc-tmc2\mpeg-pcc-tmc2-master\source\lib\PccLibMetrics\include;D:\mpeg-pcc-tmc2\mpeg-pcc-tmc2-master\dependencies\program-options-lite;D:\mpeg-pcc-tmc2\mpeg-pcc-tmc2-master\dependencies\tbb\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>MinSizeRel/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <CppLanguageStandard>c++11</CppLanguageStandard>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;__TBB_NO_IMPLICIT_LINKAGE=1;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;__TBB_NO_IMPLICIT_LINKAGE=1;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\mpeg-pcc-tmc2\mpeg-pcc-tmc2-master\source\lib\PccLibCommon\include;D:\mpeg-pcc-tmc2\mpeg-pcc-tmc2-master\source\lib\PccLibMetrics\include;D:\mpeg-pcc-tmc2\mpeg-pcc-tmc2-master\dependencies\program-options-lite;D:\mpeg-pcc-tmc2\mpeg-pcc-tmc2-master\dependencies\tbb\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <MASM>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;__TBB_NO_IMPLICIT_LINKAGE=1;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <IncludePaths>D:\mpeg-pcc-tmc2\mpeg-pcc-tmc2-master\source\lib\PccLibCommon\include;D:\mpeg-pcc-tmc2\mpeg-pcc-tmc2-master\source\lib\PccLibMetrics\include;D:\mpeg-pcc-tmc2\mpeg-pcc-tmc2-master\dependencies\program-options-lite;D:\mpeg-pcc-tmc2\mpeg-pcc-tmc2-master\dependencies\tbb\include;%(IncludePaths)</IncludePaths>
+    </MASM>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\mpeg-pcc-tmc2\mpeg-pcc-tmc2-master\source\lib\PccLibCommon\include;D:\mpeg-pcc-tmc2\mpeg-pcc-tmc2-master\source\lib\PccLibMetrics\include;D:\mpeg-pcc-tmc2\mpeg-pcc-tmc2-master\dependencies\program-options-lite;D:\mpeg-pcc-tmc2\mpeg-pcc-tmc2-master\dependencies\tbb\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\..\..\..\lib\MinSizeRel\PccLibCommon.lib;..\..\..\..\lib\MinSizeRel\PccLibMetrics.lib;..\..\..\..\lib\MinSizeRel\tbb_static.lib;..\..\..\..\lib\MinSizeRel\PccLibCommon.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>tbb_debug.lib;tbb.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/mpeg-pcc-tmc2/mpeg-pcc-tmc2-master/lib/MinSizeRel/PccAppMetrics.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/mpeg-pcc-tmc2/mpeg-pcc-tmc2-master/bin/MinSizeRel/PccAppMetrics.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\mpeg-pcc-tmc2\mpeg-pcc-tmc2-master\source\lib\PccLibCommon\include;D:\mpeg-pcc-tmc2\mpeg-pcc-tmc2-master\source\lib\PccLibMetrics\include;D:\mpeg-pcc-tmc2\mpeg-pcc-tmc2-master\dependencies\program-options-lite;D:\mpeg-pcc-tmc2\mpeg-pcc-tmc2-master\dependencies\tbb\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <CppLanguageStandard>c++11</CppLanguageStandard>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;__TBB_NO_IMPLICIT_LINKAGE=1;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;__TBB_NO_IMPLICIT_LINKAGE=1;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\mpeg-pcc-tmc2\mpeg-pcc-tmc2-master\source\lib\PccLibCommon\include;D:\mpeg-pcc-tmc2\mpeg-pcc-tmc2-master\source\lib\PccLibMetrics\include;D:\mpeg-pcc-tmc2\mpeg-pcc-tmc2-master\dependencies\program-options-lite;D:\mpeg-pcc-tmc2\mpeg-pcc-tmc2-master\dependencies\tbb\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <MASM>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;__TBB_NO_IMPLICIT_LINKAGE=1;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <IncludePaths>D:\mpeg-pcc-tmc2\mpeg-pcc-tmc2-master\source\lib\PccLibCommon\include;D:\mpeg-pcc-tmc2\mpeg-pcc-tmc2-master\source\lib\PccLibMetrics\include;D:\mpeg-pcc-tmc2\mpeg-pcc-tmc2-master\dependencies\program-options-lite;D:\mpeg-pcc-tmc2\mpeg-pcc-tmc2-master\dependencies\tbb\include;%(IncludePaths)</IncludePaths>
+    </MASM>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\mpeg-pcc-tmc2\mpeg-pcc-tmc2-master\source\lib\PccLibCommon\include;D:\mpeg-pcc-tmc2\mpeg-pcc-tmc2-master\source\lib\PccLibMetrics\include;D:\mpeg-pcc-tmc2\mpeg-pcc-tmc2-master\dependencies\program-options-lite;D:\mpeg-pcc-tmc2\mpeg-pcc-tmc2-master\dependencies\tbb\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\..\..\..\lib\RelWithDebInfo\PccLibCommon.lib;..\..\..\..\lib\RelWithDebInfo\PccLibMetrics.lib;..\..\..\..\lib\RelWithDebInfo\tbb_static.lib;..\..\..\..\lib\RelWithDebInfo\PccLibCommon.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>tbb_debug.lib;tbb.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/mpeg-pcc-tmc2/mpeg-pcc-tmc2-master/lib/RelWithDebInfo/PccAppMetrics.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/mpeg-pcc-tmc2/mpeg-pcc-tmc2-master/bin/RelWithDebInfo/PccAppMetrics.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\mpeg-pcc-tmc2\mpeg-pcc-tmc2-master\source\app\PccAppMetrics\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/mpeg-pcc-tmc2/mpeg-pcc-tmc2-master/source/app/PccAppMetrics/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/mpeg-pcc-tmc2/mpeg-pcc-tmc2-master -BD:/mpeg-pcc-tmc2/mpeg-pcc-tmc2-master/build --check-stamp-file D:/mpeg-pcc-tmc2/mpeg-pcc-tmc2-master/build/source/app/PccAppMetrics/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\CMake\share\cmake-3.15\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\Platform\Windows-MSVC.cmake;D:\mpeg-pcc-tmc2\mpeg-pcc-tmc2-master\build\CMakeFiles\3.15.0-rc3\CMakeCCompiler.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\mpeg-pcc-tmc2\mpeg-pcc-tmc2-master\build\source\app\PccAppMetrics\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/mpeg-pcc-tmc2/mpeg-pcc-tmc2-master/source/app/PccAppMetrics/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/mpeg-pcc-tmc2/mpeg-pcc-tmc2-master -BD:/mpeg-pcc-tmc2/mpeg-pcc-tmc2-master/build --check-stamp-file D:/mpeg-pcc-tmc2/mpeg-pcc-tmc2-master/build/source/app/PccAppMetrics/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\CMake\share\cmake-3.15\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\Platform\Windows-MSVC.cmake;D:\mpeg-pcc-tmc2\mpeg-pcc-tmc2-master\build\CMakeFiles\3.15.0-rc3\CMakeCCompiler.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\mpeg-pcc-tmc2\mpeg-pcc-tmc2-master\build\source\app\PccAppMetrics\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/mpeg-pcc-tmc2/mpeg-pcc-tmc2-master/source/app/PccAppMetrics/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/mpeg-pcc-tmc2/mpeg-pcc-tmc2-master -BD:/mpeg-pcc-tmc2/mpeg-pcc-tmc2-master/build --check-stamp-file D:/mpeg-pcc-tmc2/mpeg-pcc-tmc2-master/build/source/app/PccAppMetrics/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files\CMake\share\cmake-3.15\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\Platform\Windows-MSVC.cmake;D:\mpeg-pcc-tmc2\mpeg-pcc-tmc2-master\build\CMakeFiles\3.15.0-rc3\CMakeCCompiler.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\mpeg-pcc-tmc2\mpeg-pcc-tmc2-master\build\source\app\PccAppMetrics\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/mpeg-pcc-tmc2/mpeg-pcc-tmc2-master/source/app/PccAppMetrics/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/mpeg-pcc-tmc2/mpeg-pcc-tmc2-master -BD:/mpeg-pcc-tmc2/mpeg-pcc-tmc2-master/build --check-stamp-file D:/mpeg-pcc-tmc2/mpeg-pcc-tmc2-master/build/source/app/PccAppMetrics/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files\CMake\share\cmake-3.15\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.15\Modules\Platform\Windows-MSVC.cmake;D:\mpeg-pcc-tmc2\mpeg-pcc-tmc2-master\build\CMakeFiles\3.15.0-rc3\CMakeCCompiler.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\mpeg-pcc-tmc2\mpeg-pcc-tmc2-master\build\source\app\PccAppMetrics\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="D:\mpeg-pcc-tmc2\mpeg-pcc-tmc2-master\dependencies\program-options-lite\program_options_lite.cpp" />
+    <ClInclude Include="D:\mpeg-pcc-tmc2\mpeg-pcc-tmc2-master\dependencies\program-options-lite\program_options_lite.h" />
+    <ClCompile Include="D:\mpeg-pcc-tmc2\mpeg-pcc-tmc2-master\source\app\PccAppMetrics\PccAppMetrics.cpp" />
+    <ClInclude Include="D:\mpeg-pcc-tmc2\mpeg-pcc-tmc2-master\source\app\PccAppMetrics\PccAppMetrics.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:\mpeg-pcc-tmc2\mpeg-pcc-tmc2-master\build\ZERO_CHECK.vcxproj">
+      <Project>{DD6E42B0-2496-3373-A33C-F89159B59FA1}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\mpeg-pcc-tmc2\mpeg-pcc-tmc2-master\build\source\lib\PccLibCommon\PccLibCommon.vcxproj">
+      <Project>{3323BC58-6D65-3601-A373-7D4D80732B8D}</Project>
+      <Name>PccLibCommon</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\mpeg-pcc-tmc2\mpeg-pcc-tmc2-master\build\source\lib\PccLibMetrics\PccLibMetrics.vcxproj">
+      <Project>{D98B6C4D-DD56-38EA-ADA0-482738D89288}</Project>
+      <Name>PccLibMetrics</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\mpeg-pcc-tmc2\mpeg-pcc-tmc2-master\build\dependencies\tbb\tbb_static.vcxproj">
+      <Project>{84CB8609-9489-3325-BE47-90906BB8B623}</Project>
+      <Name>tbb_static</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.targets" />
+  </ImportGroup>
+</Project>
